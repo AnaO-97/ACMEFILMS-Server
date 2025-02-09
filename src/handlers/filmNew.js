@@ -21,6 +21,6 @@ module.exports = async( req, res ) => {
         res.status(200).json(newFilm);
 
     } catch (error) {
-        res.status(400).json({ filmNewController : error.message })
+        res.status(400).json({ filmNewHandler : error.message })
     }
 };
