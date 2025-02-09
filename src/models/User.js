@@ -9,7 +9,6 @@ module.exports = (database) => {
         },
         userType : {
             type : DataTypes.STRING(100),
-            allowNull : false,
         },
         fullName : {
             type : DataTypes.STRING(100),

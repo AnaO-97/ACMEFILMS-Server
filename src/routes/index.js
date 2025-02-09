@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const filmRoutes = require("./filmRoutes");
+const userRoutes = require("./userRoutes");
 
 const routes = Router();
 
@@ -8,7 +9,6 @@ routes.get("/", ( req, res ) => {
 });
 
 routes.use("/film", filmRoutes);
-
-
+routes.use("/user", userRoutes);
 
 module.exports = routes;
