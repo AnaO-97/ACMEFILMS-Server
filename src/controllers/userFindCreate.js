@@ -11,18 +11,4 @@ module.exports = async(fullName, email, password) => {
     }
 
     return isUser;
-
-    // const [user, created] = await User.findOrCreate({
-    //     where: { email },
-    //     defaults: { 
-    //         email,
-    //         fullName, 
-    //         password,
-    //         userType : "user"
-    //     }
-    // });
-
-    // if (created) {
-    //     console.log("Usuario creado:", user);
-    // } 
 };
