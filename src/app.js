@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const routes = require("./routes/index");
 
 const app    = express();
-const client = "http://localhost:3000";
+const client = "http://localhost:5173";
 
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(bodyParser.json({ limit: '50mb' }));
